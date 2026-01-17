@@ -1,18 +1,35 @@
 # Crash-Detection-System
-The dataset used for this project can be found here:https://drive.google.com/drive/folders/1NUwC-bkka0-iPqhEhIgsXWtj0DA2MR-F
-Preprocessed the 1500 Crash Videos and 3000 Normal Videos into 4-Dimensional Tensors that can be plugged into Deep Learning Models
-The first architecture we are going to use is a combination of Convolutional Neural Networks and Long Short Term Memory.
+📁 Dataset & Folder Structure
 
+The dataset used for this project is available here:
+🔗 Google Drive:
+https://drive.google.com/drive/folders/1NUwC-bkka0-iPqhEhgsXWtjODA2MR-F
 
-The Folder Structure needs to be in the following manner:
-Car Crash Detection 
-├── videos
-│   ├── Normal               # normal driving videos
+The dataset consists of 1500 crash videos and 3000 normal driving videos, which have been preprocessed into 4D tensors suitable for deep learning models.
+
+📂 Directory Structure
+Car-Crash-Detection/
+│
+├── videos/
+│   ├── Normal/                  # Normal driving videos
 │   │   ├── 000001.mp4
+│   │   ├── 000002.mp4
 │   │   ├── ...
 │   │   └── 003000.mp4
-│   ├── Crash                # crash accident videos
+│   │
+│   ├── Crash/                   # Crash / accident videos
 │   │   ├── 000001.mp4
+│   │   ├── 000002.mp4
 │   │   ├── ...
 │   │   └── 001500.mp4
-│   └── Crash-1500.txt       # annotation file for crash accident
+│
+
+🧠 Model Overview
+
+The first architecture implemented in this project is a CNN–LSTM based model:
+
+CNN for spatial feature extraction from video frames
+
+LSTM for learning temporal dependencies across frame sequences
+
+This combination enables effective classification of crash vs non-crash events from video data.
