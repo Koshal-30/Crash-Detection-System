@@ -1,21 +1,22 @@
 # Crash-Detection-System
-📁 Dataset & Folder Structure
 
-The dataset used for this project is available here:
-🔗 Google Drive:
+## 📁 Dataset & Folder Structure
+
+The dataset used for this project is available here:  
+🔗 **Google Drive:**  
 https://drive.google.com/drive/folders/1NUwC-bkka0-iPqhEhgsXWtjODA2MR-F
 
-The dataset consists of 1500 crash videos and 3000 normal driving videos, which have been preprocessed into 4D tensors suitable for deep learning models.
+The dataset consists of **1500 crash videos** and **3000 normal driving videos**, which have been preprocessed into **4D tensors** suitable for deep learning models.
 
-📂 Directory Structure
+---
 
+## 📂 Directory Structure
+
+```text
 Car-Crash-Detection/
 │
-
 ├── videos/
-
 │   ├── Normal/                  # Normal driving videos
-
 │   │   ├── 000001.mp4
 │   │   ├── 000002.mp4
 │   │   ├── ...
@@ -27,12 +28,13 @@ Car-Crash-Detection/
 │   │   ├── ...
 │   │   └── 001500.mp4
 │
-
+└── README.md
+```
 🧠 Model Overview
 
 The first architecture implemented in this project is a CNN–LSTM based model:
 
-CNN for spatial feature extraction from video frames
+CNN for spatial feature extraction from individual video frames
 
 LSTM for learning temporal dependencies across frame sequences
 
